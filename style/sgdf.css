@@ -1,0 +1,52 @@
+
+/* paragaphe et liste */
+p, ul {
+  color: #003a5d;
+  font-family: "Sarabun";
+  text-align: justify;
+}
+
+/* titres */
+h1, h2, h3, h4 {
+  color: #003a5d;
+  font-family: "Caveat Brush";
+  font-weight: bold;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* tableaux - avec gt */
+/* titres */
+th {
+  background-color: #003a5d !important;
+  color: #ffffff !important;
+  font-family: "Sarabun" !important;
+  font-weight: bold !important;
+}
+
+/* colonnes de group */
+.gt_group_heading {
+  color: #003a5d !important;
+  font-family: "Sarabun" !important;
+  font-weight: bold !important;
+}
+
+/* contenu */
+td {
+  color: #003a5d;
+  font-family: "Sarabun";
+}
+
+/* eviter les tableaux multipages */
+.gt_table{
+  break-inside: avoid;
+}
+
+/* numerotation pages */
+.pagedjs_margin-content{
+  color: #003a5d;
+  font-family: "Sarabun";
+  font-weight: bold;
+}
