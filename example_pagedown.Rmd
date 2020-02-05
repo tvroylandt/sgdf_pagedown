@@ -21,6 +21,67 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r packages}
+library(tidyverse)
+library(gt)
+```
+
+
+```{r theme}
+theme_sgdf <- theme(
+  axis.title = element_text(
+    family = "Sarabun",
+    size = 12,
+    color = "#003a5d",
+    face = "bold"
+  ),
+  legend.title = element_text(
+    family = "Sarabun",
+    size = 12,
+    color = "#003a5d",
+    face = "bold"
+  ),
+  axis.text = element_text(
+    family = "Sarabun",
+    size = 12,
+    color = "#003a5d"
+  ),
+  legend.text = element_text(
+    family = "Sarabun",
+    size = 12,
+    color = "#003a5d"
+  ),
+  legend.position = "top",
+  strip.text = element_text(
+    family = "Sarabun",
+    size = 12,
+    color = "#003a5d"
+  ),
+  plot.title = element_text(
+    family = "Caveat Brush",
+    size = 20,
+    color = "#003a5d",
+    hjust = -0.15
+  ),
+  plot.subtitle = element_text(
+    family = "Caveat Brush",
+    size = 16,
+    color = "#003a5d",
+    hjust = -0.12
+  ),
+  plot.caption = element_text(
+    family = "Sarabun",
+    size = 10,
+    color = "#003a5d",
+    hjust = -0.12
+  )
+)
+
+# définir un scale
+vect_col4 <- c("#ff8300", "#0077b3", "#d03f15", "#007254")
+vect_col5 <- c("#ff8300", "#0077b3", "#d03f15", "#007254", "#65bc99")
+vect_col8 <- c("#003a5d", "#ff8300", "#0077b3", "#d03f15", "#007254", "#65bc99", "#6e74aa", "#003a5d")
+```
 
 >
 > # Lorem Ipsum
@@ -41,9 +102,29 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 ## Titre 2
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+```{r plot}
+iris %>% 
+  ggplot(aes(x = Sepal.Length)) +
+  geom_bar(fill = "#ff8300") +
+  theme_minimal() +
+  theme_sgdf
+```
+
 # Titre 1
 
 ## Titre 2
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+```{r gt}
+iris %>% 
+  filter(Species == "setosa") %>% 
+  head(20) %>% 
+  gt()
+```
+
 
 ## Titre 2
 
