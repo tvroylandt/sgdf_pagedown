@@ -8,3 +8,15 @@ This repo contains the style and the output example of a pagedown template made 
 
 Feel free to contact me if you have question : tvroylandt@gmail.com
  
+ Images of the PDF :
+ 
+![](https://raw.githubusercontent.com/tvroylandt/sgdf_pagedown/master/img/page1.PNG)
+
+
+![](https://raw.githubusercontent.com/tvroylandt/sgdf_pagedown/master/img/page2.PNG)
+
+
+![](https://raw.githubusercontent.com/tvroylandt/sgdf_pagedown/master/img/page3.PNG)
+
+
+![](https://raw.githubusercontent.com/tvroylandt/sgdf_pagedown/master/img/page4.PNG)
